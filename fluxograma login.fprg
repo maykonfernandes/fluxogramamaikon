@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-31 03:46:54 "/>
+        <attribute name="created" value="QWx1bm87RUNFNDM2U0VOQUkyNDsyMDIzLTAzLTMxOyIwMjo0NDowMyAiOzI1MjU="/>
+        <attribute name="edited" value="QWx1bm87RUNFNDM2U0VOQUkyNDsyMDIzLTAzLTMxOyIwMzo0Njo1NCAiOzE7MjY0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="login" type="String" array="False" size=""/>
+            <declare name="senha" type="String" array="False" size=""/>
+            <output expression="&quot;Digite seu usu&#225;rio&quot;" newline="True"/>
+            <input variable="login"/>
+            <if expression="login==&quot;maykola&quot;">
+                <then>
+                    <declare name="email" type="String" array="False" size=""/>
+                    <output expression="&quot;Usu&#225;rio correto&quot;" newline="True"/>
+                    <output expression="&quot;email&quot;" newline="True"/>
+                    <input variable="email"/>
+                    <if expression="email==&quot;maykonfer@gmail&quot;">
+                        <then>
+                            <declare name="email" type="String" array="False" size=""/>
+                            <output expression="&quot;email correta&quot;" newline="True"/>
+                            <input variable="senha"/>
+                            <if expression="senha==&quot;123&quot;">
+                                <then>
+                                    <output expression="&quot;senha correta&quot;" newline="True"/>
+                                    <output expression="&quot;voce esta logado&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;senha incorreto&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;email incoreto&quot;" newline="True"/>
+                            <output expression="&quot;tente novamente &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;usu&#225;rio incorreto&quot;" newline="True"/>
+                    <output expression="&quot;tente novamente&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

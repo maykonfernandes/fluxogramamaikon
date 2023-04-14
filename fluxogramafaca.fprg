@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-12 01:22:34 "/>
+        <attribute name="created" value="QUxVTk87RUNFNDM2TUlDUk8yNTsyMDIzLTA0LTEyOyIxMjoyNzoyNyAiOzI0MTY="/>
+        <attribute name="edited" value="QUxVTk87RUNFNDM2TUlDUk8yNTsyMDIzLTA0LTEyOyIwMToyMjozNCAiOzE7MjUxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="email" type="String" array="False" size=""/>
+            <declare name="senha" type="String" array="False" size=""/>
+            <declare name="recorrente" type="Boolean" array="False" size=""/>
+            <assign variable="recorrente" expression="true"/>
+            <do expression="recorrente==true">
+                <input variable="email"/>
+                <input variable="senha"/>
+                <if expression="email==&quot;palmandado@gmail.com&quot;">
+                    <then>
+                        <if expression="senha==&quot;thaynateamo&quot;">
+                            <then>
+                                <output expression="&quot;email e senha corretos&quot;" newline="True"/>
+                                <output expression="&quot;parab&#233;ns voc&#234; esta logado&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;usuario e senha incorretos&quot;" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
